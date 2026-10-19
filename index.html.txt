@@ -1,0 +1,220 @@
+[10/19/2026 8:52 AM] Zack: <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pâtisserie La Marquise | حلويات فاخرة</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        goldLight: '#F3E5AB',
+                        softPink: '#F8E8EE',
+                        softPinkDark: '#E8A0BF',
+                        crystalWhite: '#FAFAFA',
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        serifHeader: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #FAFAFA; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA7C11 100%); }
+        .text-gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-softPink">
+                    <span class="font-serifHeader text-gold font-bold text-xl">LM</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wide text-gray-900 font-serifHeader">Pâtisserie La Marquise</h1>
+                    <p class="text-xs text-amber-600 font-semibold">أصالة التراث وفخامة الذوق الفرنسـي</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 space-x-reverse text-sm font-semibold text-gray-700">
+                <a href="#about" class="hover:text-gold transition">من نحن</a>
+                <a href="#creations" class="hover:text-gold transition">إبداعاتنا</a>
+                <a href="#events" class="hover:text-gold transition">طلبات المناسبات</a>
+                <a href="#location" class="hover:text-gold transition">الموقع والاتصال</a>
+            </nav>
+
+            <!-- Language Switcher & WhatsApp CTA -->
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button onclick="toggleLanguage()" class="px-3 py-1 text-xs border border-gold text-gold rounded-full hover:bg-gold hover:text-white transition font-bold">
+                    FR / AR
+                </button>
+                <a href="https://wa.me/213668249675" target="_blank" class="hidden sm:inline-flex items-center gap-2 gold-gradient text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:opacity-90 transition">
+                    <i class="fab font-bold fa-whatsapp text-lg"></i>
+                    <span>اطلب الآن</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-softPink/50 to-crystalWhite py-20 lg:py-28">
+[10/19/2026 8:52 AM] Zack: <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-right">
+                <span class="px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 text-xs font-bold tracking-wide">
+                    ✨ لمسة من الفخامة والذوق الرفيع
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black text-gray-900 leading-tight">
+                    عراقة الحلويات الفرنسية والتقليدية بلمسة <span class="text-gold-gradient">ملكـية</span>
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    نصنع بكل حب قطعاً فنية تذوب في الفم لتجعل من لحظاتكم ومناسباتكم ذكرى لا تُنسى. نعتمد أفضل المكونات وأعلى معايير الإتقان.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="https://wa.me/213668249675" class="gold-gradient text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">
+                        طلب خاص للمناسبات
+                    </a>
+                    <a href="https://maps.app.goo.gl/BUMbC6vK7TsFpGWb9?g_st=ac" target="_blank" class="bg-white border-2 border-gold text-gold px-6 py-3.5 rounded-full font-bold hover:bg-gold hover:text-white transition">
+                        <i class="fas fa-map-marker-alt ml-2"></i> موقع المحل
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-2 bg-gradient-to-r from-gold to-softPinkDark rounded-3xl blur-lg opacity-30"></div>
+                <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
+                    <img src="14684.jpg" alt="La Marquise Cakes" class="w-full h-[420px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creations / Menu Section -->
+    <section id="creations" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">تشكيلتنا المميزة</h3>
+                <p class="text-gray-500">تذوقوا مزيجاً فريداً بين المخبوزات والحلويات الفرنسية الفاخرة والحلويات التقليدية الاصيلة</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-crystalWhite rounded-2xl overflow-hidden border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <img src="14674.jpg" alt="Éclairs" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">الإكلير الفرنسي (Éclairs الفاخر)</h4>
+                        <p class="text-gray-600 text-sm mb-4">حشوة كريمية غنية مع تغليفة الشوكولاتة والمكسرات المحمصة.</p>
+                        <span class="text-xs font-semibold px-3 py-1 bg-softPink text-rose-700 rounded-full">Pâtisserie Française</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-crystalWhite rounded-2xl overflow-hidden border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <img src="14668.jpg" alt="Macarons" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">الماكارون الفرنسي (Macarons)</h4>
+                        <p class="text-gray-600 text-sm mb-4">هش ولذيذ بنكهات متعددة ومصنوع بدقة عالية ليرضي ذوقكم.</p>
+                        <span class="text-xs font-semibold px-3 py-1 bg-softPink text-rose-700 rounded-full">Pâtisserie Française</span>
+                    </div>
+                </div>
+[10/19/2026 8:52 AM] Zack: <!-- Product 3 -->
+                <div class="bg-crystalWhite rounded-2xl overflow-hidden border border-rose-100 shadow-sm hover:shadow-md transition">
+                    <img src="14679.jpg" alt="Tarts" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">تارت الفستق والشوكولاتة (Tartelettes)</h4>
+                        <p class="text-gray-600 text-sm mb-4">قاعدة مقرمشة مع طبقات الفستق وشوكولاتة النوتلا الغنية.</p>
+                        <span class="text-xs font-semibold px-3 py-1 bg-amber-100 text-amber-800 rounded-full">Création Spéciale</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Orders / Events Banner -->
+    <section id="events" class="py-16 gold-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h3 class="text-3xl font-black">جاهزون لتغطية جميع أفراحكم ومناسباتكم ✨</h3>
+            <p class="max-w-2xl mx-auto text-amber-50 text-lg">
+                نوفر طلبات وتشكيلات خاصة بالأعراس، الحفلات، والاجتماعات بتقديم راقي وتنسيق جذاب يشرّف ضيوفكم.
+            </p>
+            <a href="https://wa.me/213668249675" class="inline-block bg-white text-amber-900 font-bold px-8 py-3.5 rounded-full shadow-lg hover:bg-rose-50 transition">
+                تواصل معنا للطلبات المخصصة (0668249675)
+            </a>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="location" class="py-20 bg-crystalWhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-3xl font-bold mb-3">تفضلوا بزيارتنا</h3>
+                    <p class="text-gray-600">نسعد باستقبالكم في المحل لتذوق أشهى الحلويات المجهزة طازجة يومياً.</p>
+                </div>
+
+                <div class="space-y-4 text-gray-700">
+                    <div class="flex items-center space-x-4 space-x-reverse">
+                        <div class="w-10 h-10 rounded-full bg-softPink flex items-center justify-center text-gold font-bold">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong class="block text-gray-900">العنوان:</strong>
+                            <span>ورقلة - أسفل نزل الأروي الذهبي</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 space-x-reverse">
+                        <div class="w-10 h-10 rounded-full bg-softPink flex items-center justify-center text-gold font-bold">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <strong class="block text-gray-900">الهاتف:</strong>
+                            <span dir="ltr">06 68 24 96 75</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 space-x-reverse">
+                        <div class="w-10 h-10 rounded-full bg-softPink flex items-center justify-center text-gold font-bold">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="flex space-x-4 space-x-reverse text-2xl pt-1">
+                            <a href="https://instagram.com/P.la_marquise" class="text-rose-600 hover:opacity-80"><i class="fab fa-instagram"></i></a>
+                            <a href="https://tiktok.com/@p.la_marquise" class="text-gray-900 hover:opacity-80"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="text-blue-600 hover:opacity-80"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+[10/19/2026 8:52 AM] Zack: <!-- Map Link Container -->
+            <div class="rounded-3xl overflow-hidden border-2 border-gold/30 shadow-lg h-80 bg-rose-50 flex flex-col items-center justify-center text-center p-6">
+                <i class="fas fa-map-marked-alt text-5xl text-gold mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">موقعنا على الخريطة</h4>
+                <p class="text-gray-600 text-sm mb-6">اضغط على الزر أدناه لفتح موقع المحل مباشرة على خرائط Google Maps</p>
+                <a href="https://maps.app.goo.gl/BUMbC6vK7TsFpGWb9?g_st=ac" target="_blank" class="gold-gradient text-white font-bold px-6 py-3 rounded-full shadow hover:opacity-90 transition">
+                    فتح في Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gold/30 text-center text-sm">
+        <p>© 2026 Patisserie La Marquise. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
